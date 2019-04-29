@@ -1,0 +1,965 @@
+(00.000000) Unable to get $HOME directory, local configuration file will not be used.(00.000000) files stat: fs/file-max 93280, fs/nr_open 1048576
+(00.000000) rlimit: RLIMIT_NOFILE unlimited for self
+(00.000047) Warn  (criu/log.c:203): The early log isn't empty
+(00.000059) Version: 3.11 (gitid v3.11-230-ga284d197)
+(00.000062) Running on ubuntu Linux 4.18.0-18-generic #19~18.04.1-Ubuntu SMP Fri Apr 5 10:22:13 UTC 2019 x86_64
+(00.000072) Loaded kdat cache from /run/criu.kdat
+(00.000099) Will dump/restore TCP connections
+(00.000160) cpu: x86_family 6 x86_vendor_id GenuineIntel x86_model_id Intel(R) Core(TM) i5-6300HQ CPU @ 2.30GHz
+(00.000168) cpu: fpu: xfeatures_mask 0x15 xsave_size 1088 xsave_size_max 1088 xsaves_size 960
+(00.000185) cpu: fpu: x87 floating point registers     xstate_offsets      0 / 0      xstate_sizes    160 / 160   
+(00.000188) cpu: fpu: AVX registers                    xstate_offsets    576 / 576    xstate_sizes    256 / 256   
+(00.000190) cpu: fpu: MPX CSR                          xstate_offsets   1024 / 832    xstate_sizes     64 / 64    
+(00.000195) cpu: fpu:1 fxsr:1 xsave:1 xsaveopt:1 xsavec:1 xgetbv1:0 xsaves:1
+(00.000217) kernel pid_max=131072
+(00.000220) Reading image tree
+(00.000239) Add mnt ns 12 pid 1
+(00.000244) Add net ns 9 pid 1
+(00.000248) pstree pid_max=1
+(00.000252) Will restore in 6c020000 namespaces
+(00.000254) NS mask to use 6c020000
+(00.000282) Collecting 37/54 (flags 2)
+(00.000293) Collected [go/src/time/time] ID 0x1
+(00.000297) Collected pipe entry ID 0x2 PIPE ID 0xb7ec
+(00.000304) Found id pipe:[47084] (fd 1) in inherit fd list
+(00.000307) Collected pipe entry ID 0x3 PIPE ID 0xb7ed
+(00.000312) Found id pipe:[47085] (fd 2) in inherit fd list
+(00.000318) Collected pipe entry ID 0x4 PIPE ID 0xb7ee
+(00.000323) Found id pipe:[47086] (fd 9) in inherit fd list
+(00.000326) Collected [go/src/time] ID 0x5
+(00.000329) Collected [.] ID 0x6
+(00.000333)  `- ... done
+(00.000335) Collecting 43/63 (flags 0)
+(00.000339) No remap-fpath.img image
+(00.000341)  `- ... done
+(00.000395) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000401) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000405) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000408) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000411) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000414) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000418) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000421) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000424) cg: rewriting  to /
+(00.000427) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000430) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000433) cg: rewriting docker/cc822f6bd3abca647ffe620337a92f50339193938df0345dd4dd9617e92df150 to /docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000436) cg: Preparing cgroups yard (cgroups restore mode 0x4)
+(00.000590) cg: Opening .criu.cgyard.3LZqm4 as cg yard
+(00.000601) cg: 	Making controller dir .criu.cgyard.3LZqm4/perf_event (perf_event)
+(00.000724) cg: Determined cgroup dir perf_event//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.000727) cg: Skip restoring properties on cgroup dir perf_event//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000738) cg: 	Making controller dir .criu.cgyard.3LZqm4/net_cls,net_prio (net_cls,net_prio)
+(00.000837) cg: Determined cgroup dir net_cls,net_prio//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.000839) cg: Skip restoring properties on cgroup dir net_cls,net_prio//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000848) cg: 	Making controller dir .criu.cgyard.3LZqm4/pids (pids)
+(00.000980) cg: Determined cgroup dir pids//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.000985) cg: Skip restoring properties on cgroup dir pids//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.000994) cg: 	Making controller dir .criu.cgyard.3LZqm4/devices (devices)
+(00.001092) cg: Determined cgroup dir devices//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001094) cg: Skip restoring properties on cgroup dir devices//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001102) cg: 	Making controller dir .criu.cgyard.3LZqm4/cpuset (cpuset)
+(00.001198) cg: Determined cgroup dir cpuset//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001200) cg: Skip restoring properties on cgroup dir cpuset//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001208) cg: 	Making controller dir .criu.cgyard.3LZqm4/blkio (blkio)
+(00.001303) cg: Determined cgroup dir blkio//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001305) cg: Skip restoring properties on cgroup dir blkio//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001313) cg: 	Making controller dir .criu.cgyard.3LZqm4/cpu,cpuacct (cpu,cpuacct)
+(00.001409) cg: Determined cgroup dir cpu,cpuacct//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001411) cg: Skip restoring properties on cgroup dir cpu,cpuacct//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001419) cg: 	Making controller dir .criu.cgyard.3LZqm4/freezer (freezer)
+(00.001514) cg: Determined cgroup dir freezer//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001517) cg: Skip restoring properties on cgroup dir freezer//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001524) cg: 	Making controller dir .criu.cgyard.3LZqm4/rdma (rdma)
+(00.001619) cg: Determined cgroup dir rdma// already exist
+(00.001621) cg: Skip restoring properties on cgroup dir rdma//
+(00.001629) cg: 	Making controller dir .criu.cgyard.3LZqm4/memory (memory)
+(00.001724) cg: Determined cgroup dir memory//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001727) cg: Skip restoring properties on cgroup dir memory//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001734) cg: 	Making controller dir .criu.cgyard.3LZqm4/hugetlb (hugetlb)
+(00.001830) cg: Determined cgroup dir hugetlb//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001832) cg: Skip restoring properties on cgroup dir hugetlb//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001840) cg: 	Making controller dir .criu.cgyard.3LZqm4/systemd (none,name=systemd)
+(00.001938) cg: Determined cgroup dir systemd//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c already exist
+(00.001941) cg: Skip restoring properties on cgroup dir systemd//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c
+(00.001951) Running pre-restore scripts
+(00.001953) 	RPC
+(00.026848) Saved netns fd for links restore
+(00.026958) mnt: Reading mountpoint images (id 12 pid 1)
+(00.026966) mnt: 		Will mount 929 from /
+(00.026969) mnt: 		Will mount 929 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/firmware
+(00.026971) mnt: 	Read 929 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/firmware
+(00.026976) mnt: 		Will mount 928 from /sys/fs/cgroup/perf_event (E)
+(00.026978) mnt: 		Will mount 928 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event
+(00.026980) mnt: 	Read 928 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event
+(00.026984) mnt: 		Will mount 927 from /sys/fs/cgroup/net_cls,net_prio (E)
+(00.026986) mnt: 		Will mount 927 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio
+(00.026987) mnt: 	Read 927 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio
+(00.026990) mnt: 		Will mount 926 from /sys/fs/cgroup/pids/system.slice/docker.service (E)
+(00.026992) mnt: 		Will mount 926 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids
+(00.026994) mnt: 	Read 926 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids
+(00.026997) mnt: 		Will mount 925 from /sys/fs/cgroup/devices/system.slice/docker.service (E)
+(00.026999) mnt: 		Will mount 925 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices
+(00.027001) mnt: 	Read 925 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices
+(00.027008) mnt: 		Will mount 924 from /sys/fs/cgroup/cpuset (E)
+(00.027010) mnt: 		Will mount 924 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset
+(00.027011) mnt: 	Read 924 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset
+(00.027014) mnt: 		Will mount 923 from /sys/fs/cgroup/blkio (E)
+(00.027016) mnt: 		Will mount 923 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio
+(00.027018) mnt: 	Read 923 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio
+(00.027021) mnt: 		Will mount 922 from /sys/fs/cgroup/cpu,cpuacct (E)
+(00.027023) mnt: 		Will mount 922 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct
+(00.027024) mnt: 	Read 922 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct
+(00.027027) mnt: 		Will mount 921 from /sys/fs/cgroup/freezer (E)
+(00.027029) mnt: 		Will mount 921 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer
+(00.027031) mnt: 	Read 921 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer
+(00.027034) mnt: 		Will mount 920 from /sys/fs/cgroup/rdma (E)
+(00.027036) mnt: 		Will mount 920 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma
+(00.027037) mnt: 	Read 920 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma
+(00.027040) mnt: 		Will mount 919 from /sys/fs/cgroup/memory (E)
+(00.027042) mnt: 		Will mount 919 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory
+(00.027044) mnt: 	Read 919 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory
+(00.027048) mnt: 		Will mount 918 from /sys/fs/cgroup/hugetlb (E)
+(00.027050) mnt: 		Will mount 918 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb
+(00.027052) mnt: 	Read 918 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb
+(00.027055) mnt: 		Will mount 917 from /sys/fs/cgroup/systemd/system.slice/docker.service (E)
+(00.027057) mnt: 		Will mount 917 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd
+(00.027058) mnt: 	Read 917 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd
+(00.027061) mnt: 		Will mount 916 from /
+(00.027063) mnt: 		Will mount 916 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup
+(00.027064) mnt: 	Read 916 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup
+(00.027067) mnt: 		Will mount 915 from /
+(00.027069) mnt: 		Will mount 915 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys
+(00.027070) mnt: 	Read 915 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/sys
+(00.027073) mnt: 		Will mount 914 from /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/shm (E)
+(00.027075) mnt: 		Will mount 914 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm
+(00.027082) mnt: 	Read 914 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm
+(00.027088) mnt: 		Will mount 913 from /
+(00.027091) mnt: 		Will mount 913 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/mqueue
+(00.027092) mnt: 	Read 913 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/mqueue
+(00.027095) mnt: 		Will mount 912 from /
+(00.027097) mnt: 		Will mount 912 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/pts
+(00.027098) mnt: 	Read 912 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/pts
+(00.027101) mnt: 		Will mount 911 from /
+(00.027103) mnt: 		Will mount 911 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev
+(00.027104) mnt: 	Read 911 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/dev
+(00.027107) mnt: 		Will mount 910 from /dev/null (E)
+(00.027109) mnt: 		Will mount 910 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug
+(00.027111) mnt: 	Read 910 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug
+(00.027114) mnt: 		Will mount 909 from /dev/null (E)
+(00.027115) mnt: 		Will mount 909 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list
+(00.027117) mnt: 	Read 909 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list
+(00.027121) mnt: 		Will mount 908 from /dev/null (E)
+(00.027123) mnt: 		Will mount 908 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore
+(00.027125) mnt: 	Read 908 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore
+(00.027127) mnt: 		Will mount 907 from /sysrq-trigger
+(00.027129) mnt: 		Will mount 907 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger
+(00.027131) mnt: 	Read 907 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger
+(00.027134) mnt: 		Will mount 906 from /sys
+(00.027135) mnt: 		Will mount 906 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys
+(00.027137) mnt: 	Read 906 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys
+(00.027140) mnt: 		Will mount 905 from /irq
+(00.027141) mnt: 		Will mount 905 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq
+(00.027143) mnt: 	Read 905 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq
+(00.027146) mnt: 		Will mount 904 from /fs
+(00.027147) mnt: 		Will mount 904 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs
+(00.027149) mnt: 	Read 904 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs
+(00.027153) mnt: 		Will mount 903 from /bus
+(00.027155) mnt: 		Will mount 903 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus
+(00.027157) mnt: 	Read 903 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus
+(00.027159) mnt: 		Will mount 902 from /asound
+(00.027161) mnt: 		Will mount 902 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound
+(00.027163) mnt: 	Read 902 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound
+(00.027165) mnt: 		Will mount 901 from /
+(00.027167) mnt: 		Will mount 901 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc
+(00.027168) mnt: 	Read 901 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/proc
+(00.027172) mnt: 		Will mount 900 from /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/hosts (E)
+(00.027173) mnt: 		Will mount 900 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts
+(00.027175) mnt: 	Read 900 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts
+(00.027178) mnt: 		Will mount 899 from /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/hostname (E)
+(00.027180) mnt: 		Will mount 899 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname
+(00.027182) mnt: 	Read 899 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname
+(00.027186) mnt: 		Will mount 898 from /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/resolv.conf (E)
+(00.027188) mnt: 		Will mount 898 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf
+(00.027190) mnt: 	Read 898 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf
+(00.027192) mnt: 		Will mount 897 from /
+(00.027194) mnt: 		Will mount 897 @ /tmp/.criu.mntns.2iw6nM/12-0000000000/
+(00.027196) mnt: 	Read 897 mp @ /tmp/.criu.mntns.2iw6nM/12-0000000000/
+(00.027203) No netns-9.img image
+(00.027247) Warn  (criu/cr-restore.c:1266): Set CLONE_PARENT | CLONE_NEWPID but it might cause restore problem,because not all kernels support such clone flags combinations!
+(00.027253) Forking task with 1 pid (flags 0x6c028000)
+(00.027891) PID: real 15990 virt 1
+(00.027955) Wait until namespaces are created
+(00.059687) Running setup-namespaces scripts
+(00.059705) 	RPC
+(00.202477)      1: cg: Move into 2
+(00.202512)      1: cg:   `-> blkio//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202613)      1: cg:   `-> cpu,cpuacct//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202633)      1: cg:   `-> cpuset//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202646)      1: cg:   `-> devices//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202660)      1: cg:   `-> freezer//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202672)      1: cg:   `-> hugetlb//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202685)      1: cg:   `-> memory//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202697)      1: cg:   `-> systemd//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202709)      1: cg:   `-> net_cls,net_prio//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202722)      1: cg:   `-> perf_event//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202733)      1: cg:   `-> pids//docker/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/tasks
+(00.202748)      1: cg:   `-> rdma///tasks
+(00.202770)      1: Calling restore_sid() for init
+(00.202776)      1: Restoring 1 to 1 sid
+(00.202966)      1: Mount procfs in crtools-proc.8J4dRu
+(00.203171)      1: Collecting 41/37 (flags 2)
+(00.203194)      1: No tty-info.img image
+(00.203197)      1:  `- ... done
+(00.203200)      1: Collecting 42/51 (flags 0)
+(00.203204)      1: No tty-data.img image
+(00.203217)      1:  `- ... done
+(00.203220)      1: Restoring namespaces 1 flags 0x6c028000
+(00.214803)      1: kernel/hostname nr 12
+(00.214867)      1: kernel/domainname nr 6
+(00.215092)      1: Restoring IPC namespace
+(00.215099)      1: Restoring IPC variables
+(00.218029)      1: Restoring IPC shared memory
+(00.218050)      1: No ipcns-shm-10.img image
+(00.218054)      1: Restoring IPC message queues
+(00.218058)      1: No ipcns-msg-10.img image
+(00.218060)      1: Restoring IPC semaphores sets
+(00.218064)      1: No ipcns-sem-10.img image
+(00.218123)      1: No netns-ct-9.img image
+(00.218129)      1: No netns-exp-9.img image
+(00.218168)      1: mnt: Restoring mount namespace
+(00.218181)      1: mnt: Building mountpoints tree
+(00.218185)      1: mnt: 	Building plain mount tree
+(00.218187)      1: mnt: 		Working on 897->789
+(00.218193)      1: mnt: Mountpoint 897 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/) w/o parent 789
+(00.218195)      1: mnt: Mountpoint 897 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/) get parent 0 (@/tmp/.criu.mntns.2iw6nM)
+(00.218199)      1: mnt: 		Working on 898->897
+(00.218201)      1: mnt: 		Working on 899->897
+(00.218206)      1: mnt: 		Working on 900->897
+(00.218209)      1: mnt: 		Working on 901->897
+(00.218211)      1: mnt: 		Working on 902->901
+(00.218212)      1: mnt: 		Working on 903->901
+(00.218217)      1: mnt: 		Working on 904->901
+(00.218220)      1: mnt: 		Working on 905->901
+(00.218222)      1: mnt: 		Working on 906->901
+(00.218224)      1: mnt: 		Working on 907->901
+(00.218225)      1: mnt: 		Working on 908->901
+(00.218230)      1: mnt: 		Working on 909->901
+(00.218233)      1: mnt: 		Working on 910->901
+(00.218235)      1: mnt: 		Working on 911->897
+(00.218237)      1: mnt: 		Working on 912->911
+(00.218239)      1: mnt: 		Working on 913->911
+(00.218240)      1: mnt: 		Working on 914->911
+(00.218245)      1: mnt: 		Working on 915->897
+(00.218248)      1: mnt: 		Working on 916->915
+(00.218250)      1: mnt: 		Working on 917->916
+(00.218252)      1: mnt: 		Working on 918->916
+(00.218253)      1: mnt: 		Working on 919->916
+(00.218265)      1: mnt: 		Working on 920->916
+(00.218268)      1: mnt: 		Working on 921->916
+(00.218270)      1: mnt: 		Working on 922->916
+(00.218272)      1: mnt: 		Working on 923->916
+(00.218274)      1: mnt: 		Working on 924->916
+(00.218278)      1: mnt: 		Working on 925->916
+(00.218285)      1: mnt: 		Working on 926->916
+(00.218288)      1: mnt: 		Working on 927->916
+(00.218293)      1: mnt: 		Working on 928->916
+(00.218296)      1: mnt: 		Working on 929->915
+(00.218298)      1: mnt: 	Resorting siblings on 0
+(00.218300)      1: mnt: 	Resorting siblings on 897
+(00.218302)      1: mnt: 	Resorting siblings on 898
+(00.218303)      1: mnt: 	Resorting siblings on 899
+(00.218305)      1: mnt: 	Resorting siblings on 900
+(00.218307)      1: mnt: 	Resorting siblings on 901
+(00.218309)      1: mnt: 	Resorting siblings on 902
+(00.218311)      1: mnt: 	Resorting siblings on 903
+(00.218312)      1: mnt: 	Resorting siblings on 904
+(00.218314)      1: mnt: 	Resorting siblings on 905
+(00.218316)      1: mnt: 	Resorting siblings on 906
+(00.218318)      1: mnt: 	Resorting siblings on 907
+(00.218320)      1: mnt: 	Resorting siblings on 908
+(00.218322)      1: mnt: 	Resorting siblings on 909
+(00.218324)      1: mnt: 	Resorting siblings on 910
+(00.218326)      1: mnt: 	Resorting siblings on 911
+(00.218328)      1: mnt: 	Resorting siblings on 912
+(00.218330)      1: mnt: 	Resorting siblings on 913
+(00.218332)      1: mnt: 	Resorting siblings on 914
+(00.218333)      1: mnt: 	Resorting siblings on 915
+(00.218335)      1: mnt: 	Resorting siblings on 916
+(00.218337)      1: mnt: 	Resorting siblings on 917
+(00.218339)      1: mnt: 	Resorting siblings on 918
+(00.218341)      1: mnt: 	Resorting siblings on 919
+(00.218343)      1: mnt: 	Resorting siblings on 920
+(00.218344)      1: mnt: 	Resorting siblings on 921
+(00.218347)      1: mnt: 	Resorting siblings on 922
+(00.218349)      1: mnt: 	Resorting siblings on 923
+(00.218351)      1: mnt: 	Resorting siblings on 924
+(00.218353)      1: mnt: 	Resorting siblings on 925
+(00.218356)      1: mnt: 	Resorting siblings on 926
+(00.218358)      1: mnt: 	Resorting siblings on 927
+(00.218361)      1: mnt: 	Resorting siblings on 928
+(00.218362)      1: mnt: 	Resorting siblings on 929
+(00.218364)      1: mnt: Done:
+(00.218366)      1: mnt: [/tmp/.criu.mntns.2iw6nM](0->0)
+(00.218368)      1: mnt:  [/tmp/.criu.mntns.2iw6nM/12-0000000000/](897->789)
+(00.218370)      1: mnt:   [/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf](898->897)
+(00.218372)      1: mnt:   <--
+(00.218374)      1: mnt:   [/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname](899->897)
+(00.218376)      1: mnt:   <--
+(00.218378)      1: mnt:   [/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts](900->897)
+(00.218379)      1: mnt:   <--
+(00.218381)      1: mnt:   [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc](901->897)
+(00.218383)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound](902->901)
+(00.218385)      1: mnt:    <--
+(00.218386)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus](903->901)
+(00.218388)      1: mnt:    <--
+(00.218390)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs](904->901)
+(00.218391)      1: mnt:    <--
+(00.218393)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq](905->901)
+(00.218395)      1: mnt:    <--
+(00.218397)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys](906->901)
+(00.218398)      1: mnt:    <--
+(00.218400)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger](907->901)
+(00.218402)      1: mnt:    <--
+(00.218403)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore](908->901)
+(00.226323)      1: mnt:    <--
+(00.226328)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list](909->901)
+(00.226331)      1: mnt:    <--
+(00.226332)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug](910->901)
+(00.226334)      1: mnt:    <--
+(00.226336)      1: mnt:   <--
+(00.226338)      1: mnt:   [/tmp/.criu.mntns.2iw6nM/12-0000000000/dev](911->897)
+(00.226340)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/pts](912->911)
+(00.226353)      1: mnt:    <--
+(00.226355)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/mqueue](913->911)
+(00.226357)      1: mnt:    <--
+(00.226359)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm](914->911)
+(00.226360)      1: mnt:    <--
+(00.226362)      1: mnt:   <--
+(00.226364)      1: mnt:   [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys](915->897)
+(00.226366)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup](916->915)
+(00.226368)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd](917->916)
+(00.226370)      1: mnt:     <--
+(00.226371)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb](918->916)
+(00.226373)      1: mnt:     <--
+(00.226375)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory](919->916)
+(00.226377)      1: mnt:     <--
+(00.226379)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma](920->916)
+(00.226381)      1: mnt:     <--
+(00.226383)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer](921->916)
+(00.226384)      1: mnt:     <--
+(00.226386)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct](922->916)
+(00.226388)      1: mnt:     <--
+(00.226390)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio](923->916)
+(00.226392)      1: mnt:     <--
+(00.226394)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset](924->916)
+(00.226395)      1: mnt:     <--
+(00.226397)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices](925->916)
+(00.226399)      1: mnt:     <--
+(00.226401)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids](926->916)
+(00.226403)      1: mnt:     <--
+(00.226462)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio](927->916)
+(00.226484)      1: mnt:     <--
+(00.226486)      1: mnt:     [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event](928->916)
+(00.226488)      1: mnt:     <--
+(00.226490)      1: mnt:    <--
+(00.226492)      1: mnt:    [/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/firmware](929->915)
+(00.226494)      1: mnt:    <--
+(00.226496)      1: mnt:   <--
+(00.226510)      1: mnt:  <--
+(00.226512)      1: mnt: <--
+(00.226515)      1: mnt: Inspecting sharing on 897 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/)
+(00.226519)      1: mnt: Inspecting sharing on 898 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf)
+(00.226521)      1: mnt: 	The mount 899 is bind for 898 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf)
+(00.226524)      1: mnt: 	The mount 900 is bind for 898 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf)
+(00.226526)      1: mnt: Inspecting sharing on 899 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname)
+(00.226527)      1: mnt: Inspecting sharing on 900 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts)
+(00.226529)      1: mnt: Inspecting sharing on 901 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226531)      1: mnt: 	The mount 902 is bind for 901 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226533)      1: mnt: 	The mount 903 is bind for 901 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226535)      1: mnt: 	The mount 904 is bind for 901 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226537)      1: mnt: 	The mount 905 is bind for 901 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226539)      1: mnt: 	The mount 906 is bind for 901 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226544)      1: mnt: 	The mount 907 is bind for 901 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc)
+(00.226547)      1: mnt: Inspecting sharing on 902 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound)
+(00.226549)      1: mnt: Inspecting sharing on 903 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus)
+(00.226550)      1: mnt: Inspecting sharing on 904 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs)
+(00.226552)      1: mnt: Inspecting sharing on 905 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq)
+(00.226554)      1: mnt: Inspecting sharing on 906 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys)
+(00.226556)      1: mnt: Inspecting sharing on 907 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger)
+(00.226558)      1: mnt: Inspecting sharing on 908 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore)
+(00.226560)      1: mnt: 	The mount 909 is bind for 908 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore)
+(00.226562)      1: mnt: 	The mount 910 is bind for 908 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug -> @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore)
+(00.226564)      1: mnt: Inspecting sharing on 909 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list)
+(00.226565)      1: mnt: Inspecting sharing on 910 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug)
+(00.226567)      1: mnt: Inspecting sharing on 911 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/dev)
+(00.226569)      1: mnt: Inspecting sharing on 912 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/pts)
+(00.226571)      1: mnt: Inspecting sharing on 913 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/mqueue)
+(00.226573)      1: mnt: Inspecting sharing on 914 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm)
+(00.226575)      1: mnt: Inspecting sharing on 915 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys)
+(00.226577)      1: mnt: Inspecting sharing on 916 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup)
+(00.226579)      1: mnt: Inspecting sharing on 917 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd)
+(00.226581)      1: mnt: Inspecting sharing on 918 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb)
+(00.226583)      1: mnt: Inspecting sharing on 919 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory)
+(00.226585)      1: mnt: Inspecting sharing on 920 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma)
+(00.226586)      1: mnt: Inspecting sharing on 921 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer)
+(00.226588)      1: mnt: Inspecting sharing on 922 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct)
+(00.226590)      1: mnt: Inspecting sharing on 923 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio)
+(00.226592)      1: mnt: Inspecting sharing on 924 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset)
+(00.226594)      1: mnt: Inspecting sharing on 925 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices)
+(00.226596)      1: mnt: Inspecting sharing on 926 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids)
+(00.226598)      1: mnt: Inspecting sharing on 927 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio)
+(00.226600)      1: mnt: Inspecting sharing on 928 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event)
+(00.226602)      1: mnt: Inspecting sharing on 929 shared_id 0 master_id 0 (@/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/firmware)
+(00.226611)      1: mnt: Start with 0:/tmp/.criu.mntns.2iw6nM
+(00.226631)      1: mnt: Start with 0:/tmp/.criu.mntns.2iw6nM
+(00.243902)      1: mnt: Start with 0:/tmp/.criu.mntns.2iw6nM
+(00.243917)      1: mnt: 	Mounting aufs @/tmp/.criu.mntns.2iw6nM/12-0000000000/ (0)
+(00.244324)      1: mnt: 897:/tmp/.criu.mntns.2iw6nM/12-0000000000/ private 1 shared 0 slave 0
+(00.244712)      1: mnt: 	Mounting unsupported @/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf (0)
+(00.244720)      1: mnt: 	Bind /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/resolv.conf to /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf
+(00.245072)      1: mnt: 898:/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/resolv.conf private 1 shared 0 slave 0
+(00.245409)      1: mnt: 	Mounting unsupported @/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname (0)
+(00.245417)      1: mnt: 	Bind /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/hostname to /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname
+(00.246681)      1: mnt: 899:/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hostname private 1 shared 0 slave 0
+(00.246931)      1: mnt: 	Mounting unsupported @/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts (0)
+(00.246939)      1: mnt: 	Bind /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/hosts to /tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts
+(00.247098)      1: mnt: 900:/tmp/.criu.mntns.2iw6nM/12-0000000000/etc/hosts private 1 shared 0 slave 0
+(00.247313)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc (0)
+(00.247672)      1: mnt: 901:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc private 1 shared 0 slave 0
+(00.247980)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger
+(00.247987)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys
+(00.247990)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq
+(00.247992)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs
+(00.247994)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus
+(00.247997)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound
+(00.247999)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound (0)
+(00.248003)      1: mnt: 	Bind /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound
+(00.248143)      1: mnt: 902:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/asound private 1 shared 0 slave 0
+(00.256349)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus (0)
+(00.256363)      1: mnt: 	Bind /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus
+(00.258967)      1: mnt: 903:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/bus private 1 shared 0 slave 0
+(00.259570)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs (0)
+(00.259580)      1: mnt: 	Bind /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs
+(00.260506)      1: mnt: 904:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/fs private 1 shared 0 slave 0
+(00.260797)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq (0)
+(00.260806)      1: mnt: 	Bind /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq
+(00.260963)      1: mnt: 905:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/irq private 1 shared 0 slave 0
+(00.261123)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys (0)
+(00.261131)      1: mnt: 	Bind /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys
+(00.261230)      1: mnt: 906:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sys private 1 shared 0 slave 0
+(00.261319)      1: mnt: 	Mounting proc @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger (0)
+(00.261335)      1: mnt: 	Bind /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger
+(00.261399)      1: mnt: 907:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sysrq-trigger private 1 shared 0 slave 0
+(00.261480)      1: mnt: 	Mounting devtmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore (0)
+(00.261485)      1: mnt: 	Bind /dev/null to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore
+(00.261587)      1: mnt: 908:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/kcore private 1 shared 0 slave 0
+(00.261697)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug
+(00.261703)      1: mnt: 		Bind private /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list
+(00.261705)      1: mnt: 	Mounting devtmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list (0)
+(00.261707)      1: mnt: 	Bind /dev/null to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list
+(00.261764)      1: mnt: 909:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/timer_list private 1 shared 0 slave 0
+(00.262395)      1: mnt: 	Mounting devtmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug (0)
+(00.262402)      1: mnt: 	Bind /dev/null to /tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug
+(00.262744)      1: mnt: 910:/tmp/.criu.mntns.2iw6nM/12-0000000000/proc/sched_debug private 1 shared 0 slave 0
+(00.262756)      1: mnt: 	Mounting tmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/dev (0)
+(00.297277)      1: mnt: 911:/tmp/.criu.mntns.2iw6nM/12-0000000000/dev private 1 shared 0 slave 0
+(00.297302)      1: mnt: 	Mounting devpts @/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/pts (0)
+(00.297418)      1: mnt: 912:/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/pts private 1 shared 0 slave 0
+(00.297424)      1: mnt: 	Mounting mqueue @/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/mqueue (0)
+(00.297503)      1: mnt: 913:/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/mqueue private 1 shared 0 slave 0
+(00.297510)      1: mnt: 	Mounting tmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm (0)
+(00.297512)      1: mnt: 	Bind /var/lib/docker/containers/333c81404e94c44de930b65c2476a91c7ac66db2ce871f0d6edb3df502d7e26c/shm to /tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm
+(00.297524)      1: mnt: 914:/tmp/.criu.mntns.2iw6nM/12-0000000000/dev/shm private 1 shared 0 slave 0
+(00.297529)      1: mnt: 	Mounting sysfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys (0)
+(00.297719)      1: mnt: 915:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys private 1 shared 0 slave 0
+(00.297728)      1: mnt: 	Mounting tmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup (0)
+(00.302789)      1: mnt: 916:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup private 1 shared 0 slave 0
+(00.302811)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd (0)
+(00.302814)      1: mnt: 	Bind /sys/fs/cgroup/systemd/system.slice/docker.service to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd
+(00.302834)      1: mnt: 917:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/systemd private 1 shared 0 slave 0
+(00.302840)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb (0)
+(00.302842)      1: mnt: 	Bind /sys/fs/cgroup/hugetlb to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb
+(00.302853)      1: mnt: 918:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/hugetlb private 1 shared 0 slave 0
+(00.302860)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory (0)
+(00.302861)      1: mnt: 	Bind /sys/fs/cgroup/memory to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory
+(00.302872)      1: mnt: 919:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/memory private 1 shared 0 slave 0
+(00.302879)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma (0)
+(00.302881)      1: mnt: 	Bind /sys/fs/cgroup/rdma to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma
+(00.302894)      1: mnt: 920:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/rdma private 1 shared 0 slave 0
+(00.302900)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer (0)
+(00.302909)      1: mnt: 	Bind /sys/fs/cgroup/freezer to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer
+(00.302920)      1: mnt: 921:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/freezer private 1 shared 0 slave 0
+(00.302925)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct (0)
+(00.302927)      1: mnt: 	Bind /sys/fs/cgroup/cpu,cpuacct to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct
+(00.302938)      1: mnt: 922:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpu,cpuacct private 1 shared 0 slave 0
+(00.302943)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio (0)
+(00.302945)      1: mnt: 	Bind /sys/fs/cgroup/blkio to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio
+(00.302956)      1: mnt: 923:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/blkio private 1 shared 0 slave 0
+(00.302961)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset (0)
+(00.302963)      1: mnt: 	Bind /sys/fs/cgroup/cpuset to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset
+(00.302974)      1: mnt: 924:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/cpuset private 1 shared 0 slave 0
+(00.302981)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices (0)
+(00.302983)      1: mnt: 	Bind /sys/fs/cgroup/devices/system.slice/docker.service to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices
+(00.302995)      1: mnt: 925:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/devices private 1 shared 0 slave 0
+(00.303000)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids (0)
+(00.303002)      1: mnt: 	Bind /sys/fs/cgroup/pids/system.slice/docker.service to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids
+(00.304004)      1: mnt: 926:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/pids private 1 shared 0 slave 0
+(00.304023)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio (0)
+(00.304026)      1: mnt: 	Bind /sys/fs/cgroup/net_cls,net_prio to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio
+(00.304041)      1: mnt: 927:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/net_cls,net_prio private 1 shared 0 slave 0
+(00.304048)      1: mnt: 	Mounting cgroup @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event (0)
+(00.304050)      1: mnt: 	Bind /sys/fs/cgroup/perf_event to /tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event
+(00.304060)      1: mnt: 928:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/fs/cgroup/perf_event private 1 shared 0 slave 0
+(00.304066)      1: mnt: 	Mounting tmpfs @/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/firmware (0)
+(00.316493)      1: mnt: 929:/tmp/.criu.mntns.2iw6nM/12-0000000000/sys/firmware private 1 shared 0 slave 0
+(00.316514)      1: mnt: Start with 0:/tmp/.criu.mntns.2iw6nM
+(00.332979)      1: mnt: Move the root to /tmp/.criu.mntns.2iw6nM/12-0000000000
+iptables-restore: invalid option -- 'w'
+ip6tables-restore: invalid option -- 'w'
+(00.346258) Running post-setup-namespaces scripts
+(00.346270) 	RPC
+(00.347836)      1: Preparing info about shared resources
+(00.347873)      1: Collecting 45/38 (flags 0)
+(00.347880)      1: No filelocks.img image
+(00.347883)      1:  `- ... done
+(00.347885)      1: Collecting 39/27 (flags 0)
+(00.348183)      1: Collected pipe data for 0xb7ec (chain 12)
+(00.348192)      1:  `- ... done
+(00.348194)      1: Collecting 40/27 (flags 0)
+(00.348201)      1: No fifo-data.img image
+(00.348203)      1:  `- ... done
+(00.348205)      1: Collecting 38/64 (flags 0)
+(00.348209)      1: No sk-queues.img image
+(00.348211)      1:  `- ... done
+(00.348454)      1: Found 10 VMAs in image
+(00.348462)      1: vma 0x400000 0x48a000
+(00.348464)      1: vma 0x48a000 0x547000
+(00.348466)      1: vma 0x547000 0x55b000
+(00.348468)      1: vma 0x55b000 0x579000
+(00.348470)      1: vma 0xc000000000 0xc004000000
+(00.348478)      1: vma 0x7f9633e5b000 0x7f963610c000
+(00.348480)      1: vma 0x7ffc26189000 0x7ffc261aa000
+(00.348482)      1: vma 0x7ffc261bb000 0x7ffc261be000
+(00.348483)      1: vma 0x7ffc261be000 0x7ffc261c0000
+(00.348485)      1: vma 0xffffffffff600000 0xffffffffff601000
+(00.348681)      1: Collect fdinfo pid=1 fd=0 id=0x2
+(00.348694)      1: Collect fdinfo pid=1 fd=1 id=0x3
+(00.348698)      1: Collect fdinfo pid=1 fd=2 id=0x4
+(00.348967)      1: skqueue: Preparing SCMs
+(00.348973)      1: Pipes:
+(00.348976)      1:  `- PIPE ID 0xb7ec
+(00.348977)      1:   `- ID 0x5620212d2c60 0x2
+(00.348979)      1:    `- FD 0 pid 1
+(00.348981)      1:     by 0x2
+(00.348983)      1:  `- PIPE ID 0xb7ed
+(00.348985)      1:   `- ID 0x5620212d2e10 0x3
+(00.348986)      1:    `- FD 1 pid 1
+(00.348988)      1:     by 0x3
+(00.348990)      1:  `- PIPE ID 0xb7ee
+(00.348991)      1:   `- ID 0x5620212d2fc0 0x4
+(00.348993)      1:    `- FD 2 pid 1
+(00.348995)      1:     by 0x4
+(00.348997)      1: unix: ghost: Resolving addresses
+(00.348998)      1: File descs:
+(00.349000)      1:  `- type 1 ID 0x1
+(00.349002)      1:  `- type 2 ID 0x2
+(00.349003)      1:    `- FD 0 pid 1
+(00.349005)      1:  `- type 2 ID 0x3
+(00.349007)      1:    `- FD 1 pid 1
+(00.349008)      1:  `- type 2 ID 0x4
+(00.349010)      1:    `- FD 2 pid 1
+(00.349011)      1:  `- type 1 ID 0x5
+(00.349013)      1:  `- type 1 ID 0x6
+(00.351462)      1: Opened local page read 1 (parent 0)
+(00.351472)      1: Enqueue page-read
+(00.351474)      1: Enqueue page-read
+(00.351476)      1: Enqueue page-read
+(00.351478)      1: Enqueue page-read
+(00.351479)      1: Enqueue page-read
+(00.351481)      1: Enqueue page-read
+(00.351482)      1: Enqueue page-read
+(00.351484)      1: Enqueue page-read
+(00.351485)      1: Enqueue page-read
+(00.351487)      1: Enqueue page-read
+(00.351488)      1: Enqueue page-read
+(00.351490)      1: Enqueue page-read
+(00.351492)      1: Enqueue page-read
+(00.351493)      1: Enqueue page-read
+(00.351495)      1: Enqueue page-read
+(00.351496)      1: Enqueue page-read
+(00.351498)      1: Enqueue page-read
+(00.351499)      1: Enqueue page-read
+(00.351501)      1: Enqueue page-read
+(00.351502)      1: Enqueue page-read
+(00.351504)      1: Enqueue page-read
+(00.351505)      1: Enqueue page-read
+(00.351507)      1: Enqueue page-read
+(00.351509)      1: Enqueue page-read
+(00.351510)      1: Enqueue page-read
+(00.351512)      1: Enqueue page-read
+(00.351513)      1: Enqueue page-read
+(00.351515)      1: Enqueue page-read
+(00.351516)      1: Enqueue page-read
+(00.351518)      1: Enqueue page-read
+(00.351519)      1: Enqueue page-read
+(00.351521)      1: Enqueue page-read
+(00.351522)      1: Enqueue page-read
+(00.351524)      1: Enqueue page-read
+(00.351525)      1: Enqueue page-read
+(00.351527)      1: Enqueue page-read
+(00.351528)      1: Enqueue page-read
+(00.351530)      1: Enqueue page-read
+(00.351532)      1: Enqueue page-read
+(00.351533)      1: Enqueue page-read
+(00.351535)      1: Enqueue page-read
+(00.351536)      1: Enqueue page-read
+(00.351538)      1: Enqueue page-read
+(00.351539)      1: Enqueue page-read
+(00.351541)      1: Enqueue page-read
+(00.351542)      1: Enqueue page-read
+(00.351544)      1: Enqueue page-read
+(00.351545)      1: Enqueue page-read
+(00.351547)      1: Enqueue page-read
+(00.351549)      1: Enqueue page-read
+(00.351550)      1: Enqueue page-read
+(00.351552)      1: Enqueue page-read
+(00.351553)      1: Enqueue page-read
+(00.351555)      1: Enqueue page-read
+(00.351556)      1: Enqueue page-read
+(00.351558)      1: Enqueue page-read
+(00.351559)      1: Enqueue page-read
+(00.351561)      1: Enqueue page-read
+(00.351562)      1: Enqueue page-read
+(00.351564)      1: Enqueue page-read
+(00.351566)      1: Enqueue page-read
+(00.351567)      1: Enqueue page-read
+(00.351569)      1: Enqueue page-read
+(00.351570)      1: Enqueue page-read
+(00.351572)      1: Enqueue page-read
+(00.351573)      1: Enqueue page-read
+(00.351575)      1: Enqueue page-read
+(00.351579)      1: nr_restored_pages: 135
+(00.351581)      1: nr_shared_pages:   0
+(00.351588)      1: nr_dropped_pages:   0
+(00.351590)      1: nr_lazy:           0
+(00.351594)      1: Shrunk premap area to 0x7f2eec5e1000(0)
+(00.351597)      1: Restore on-core sigactions for 1
+(00.351632)      1: Restoring children in alien sessions:
+(00.351636)      1: Restoring children in our session:
+(00.351645)      1: Restoring 1 to 1 pgid
+(00.351650)      1: Restoring resources
+(00.351658)      1: Opening fdinfo-s
+(00.351661)      1: 		Creating pipe pipe_id=0xb7ec id=0x2
+(00.351669)      1: Found id pipe:[47084] (fd 0) in inherit fd list
+(00.351672)      1: File pipe:[47084] will be restored from fd 0 dumped from inherit fd 0
+(00.351685)      1: 		Create fd for 0
+(00.351688)      1: 		Creating pipe pipe_id=0xb7ed id=0x3
+(00.351693)      1: Found id pipe:[47085] (fd 1) in inherit fd list
+(00.351695)      1: File pipe:[47085] will be restored from fd 1 dumped from inherit fd 1
+(00.351702)      1: 		Create fd for 1
+(00.351704)      1: 		Creating pipe pipe_id=0xb7ee id=0x4
+(00.351709)      1: Found id pipe:[47086] (fd 2) in inherit fd list
+(00.351711)      1: File pipe:[47086] will be restored from fd 2 dumped from inherit fd 2
+(00.351718)      1: 		Create fd for 2
+(00.351720)      1: Opening 0x00000000400000-0x0000000048a000 0000000000000000 (41) vma
+(00.351733)      1: Opening 0x0000000048a000-0x00000000547000 0x0000000008a000 (41) vma
+(00.351736)      1: Opening 0x00000000547000-0x0000000055b000 0x00000000147000 (41) vma
+(00.352497)      1: `- render 57 iovs (0x400000:4096...)
+(00.352510)      1: Restore via sigreturn
+(00.352582)      1: Parsed 56201f184000-56201f2b4000 vma
+(00.352587)      1: Parsed 56201f4b4000-56201f4d3000 vma
+(00.352589)      1: Parsed 56201f4b4000-56201f4d9000 vma
+(00.352591)      1: Parsed 56201f4b4000-56201f4eb000 vma
+(00.352593)      1: Parsed 5620212cf000-5620212f0000 vma
+(00.352595)      1: Parsed 7f2ef2a31000-7f2ef2bce000 vma
+(00.352597)      1: Parsed 7f2ef2a31000-7f2ef2dcd000 vma
+(00.352599)      1: Parsed 7f2ef2a31000-7f2ef2dce000 vma
+(00.352600)      1: Parsed 7f2ef2a31000-7f2ef2dcf000 vma
+(00.352602)      1: Parsed 7f2ef2a31000-7f2ef2de9000 vma
+(00.352604)      1: Parsed 7f2ef2a31000-7f2ef2fe8000 vma
+(00.352606)      1: Parsed 7f2ef2a31000-7f2ef2fe9000 vma
+(00.352608)      1: Parsed 7f2ef2a31000-7f2ef2fea000 vma
+(00.352609)      1: Parsed 7f2ef2a31000-7f2ef2fee000 vma
+(00.352611)      1: Parsed 7f2ef2a31000-7f2ef2ff5000 vma
+(00.352613)      1: Parsed 7f2ef2a31000-7f2ef31f4000 vma
+(00.352615)      1: Parsed 7f2ef2a31000-7f2ef31f5000 vma
+(00.352617)      1: Parsed 7f2ef2a31000-7f2ef31f6000 vma
+(00.352618)      1: Parsed 7f2ef2a31000-7f2ef33dd000 vma
+(00.352620)      1: Parsed 7f2ef2a31000-7f2ef35dd000 vma
+(00.352622)      1: Parsed 7f2ef2a31000-7f2ef35e1000 vma
+(00.352624)      1: Parsed 7f2ef2a31000-7f2ef35e3000 vma
+(00.352626)      1: Parsed 7f2ef2a31000-7f2ef35e7000 vma
+(00.352627)      1: Parsed 7f2ef2a31000-7f2ef35fe000 vma
+(00.352629)      1: Parsed 7f2ef2a31000-7f2ef37fd000 vma
+(00.352631)      1: Parsed 7f2ef2a31000-7f2ef37fe000 vma
+(00.352633)      1: Parsed 7f2ef2a31000-7f2ef37ff000 vma
+(00.352634)      1: Parsed 7f2ef2a31000-7f2ef3801000 vma
+(00.352636)      1: Parsed 7f2ef2a31000-7f2ef381f000 vma
+(00.352638)      1: Parsed 7f2ef2a31000-7f2ef3a1e000 vma
+(00.352640)      1: Parsed 7f2ef2a31000-7f2ef3a20000 vma
+(00.352642)      1: Parsed 7f2ef2a31000-7f2ef3a21000 vma
+(00.352644)      1: Parsed 7f2ef2a31000-7f2ef3a24000 vma
+(00.352645)      1: Parsed 7f2ef2a31000-7f2ef3c23000 vma
+(00.352647)      1: Parsed 7f2ef2a31000-7f2ef3c24000 vma
+(00.352649)      1: Parsed 7f2ef2a31000-7f2ef3c25000 vma
+(00.352651)      1: Parsed 7f2ef2a31000-7f2ef3c2d000 vma
+(00.352653)      1: Parsed 7f2ef2a31000-7f2ef3e2c000 vma
+(00.352654)      1: Parsed 7f2ef2a31000-7f2ef3e2d000 vma
+(00.352665)      1: Parsed 7f2ef2a31000-7f2ef3e2e000 vma
+(00.352667)      1: Parsed 7f2ef2a31000-7f2ef3e41000 vma
+(00.352669)      1: Parsed 7f2ef2a31000-7f2ef4040000 vma
+(00.352670)      1: Parsed 7f2ef2a31000-7f2ef4041000 vma
+(00.352672)      1: Parsed 7f2ef2a31000-7f2ef4042000 vma
+(00.352674)      1: Parsed 7f2ef2a31000-7f2ef4043000 vma
+(00.352680)      1: Parsed 7f2ef2a31000-7f2ef406a000 vma
+(00.352682)      1: Parsed 7f2ef4243000-7f2ef4246000 vma
+(00.352684)      1: Parsed 7f2ef4243000-7f2ef4250000 vma
+(00.352686)      1: Parsed 7f2ef4243000-7f2ef4256000 vma
+(00.352687)      1: Parsed 7f2ef4243000-7f2ef4258000 vma
+(00.352689)      1: Parsed 7f2ef4243000-7f2ef4268000 vma
+(00.352691)      1: Parsed 7f2ef4243000-7f2ef426a000 vma
+(00.352693)      1: Parsed 7f2ef4243000-7f2ef426b000 vma
+(00.352694)      1: Parsed 7f2ef4243000-7f2ef426c000 vma
+(00.352696)      1: Parsed 7f2ef4243000-7f2ef426d000 vma
+(00.352698)      1: Parsed 7ffef963a000-7ffef965b000 vma
+(00.352700)      1: Parsed 7ffef9799000-7ffef979c000 vma
+(00.352702)      1: Parsed 7ffef9799000-7ffef979e000 vma
+(00.352704)      1: Parsed ffffffffff600000-ffffffffff601000 vma
+(00.352709)      1: 5 threads require 252K of memory
+(00.352712)      1: Found bootstrap VMA hint at: 0x10000 (needs ~272K)
+(00.352817)      1: 	call mremap(0x7f2ef4243000, 8192, 8192, MAYMOVE | FIXED, 0x4b000)
+(00.352825)      1: 	call mremap(0x7f2ef4256000, 8192, 8192, MAYMOVE | FIXED, 0x4d000)
+(00.352837)      1: x86: xsave runtime structure
+(00.352840)      1: x86: -----------------------
+(00.352841)      1: x86: cwd:0x40 swd:0 twd:0 fop:0 mxcsr:0x1fa0 mxcsr_mask:0xffff
+(00.352844)      1: x86: magic1:0x46505853 extended_size:900 xstate_bv:0x17 xstate_size:896
+(00.352846)      1: x86: xstate_bv: 0x17
+(00.352847)      1: x86: -----------------------
+(00.352849)      1: Thread    0 stack  0x1a080 rt_sigframe  0x22080
+(00.352852)      1: x86: xsave runtime structure
+(00.352853)      1: x86: -----------------------
+(00.352855)      1: x86: cwd:0x40 swd:0 twd:0 fop:0 mxcsr:0x1fa0 mxcsr_mask:0xffff
+(00.352857)      1: x86: magic1:0x46505853 extended_size:900 xstate_bv:0x17 xstate_size:896
+(00.352859)      1: x86: xstate_bv: 0x17
+(00.352860)      1: x86: -----------------------
+(00.352864)      1: Thread    1 stack  0x23880 rt_sigframe  0x2b880
+(00.352866)      1: x86: xsave runtime structure
+(00.352868)      1: x86: -----------------------
+(00.352869)      1: x86: cwd:0x40 swd:0 twd:0 fop:0 mxcsr:0x1fa0 mxcsr_mask:0xffff
+(00.352871)      1: x86: magic1:0x46505853 extended_size:900 xstate_bv:0x17 xstate_size:896
+(00.352873)      1: x86: xstate_bv: 0x17
+(00.352874)      1: x86: -----------------------
+(00.352877)      1: Thread    2 stack  0x2d080 rt_sigframe  0x35080
+(00.352879)      1: x86: xsave runtime structure
+(00.352881)      1: x86: -----------------------
+(00.352882)      1: x86: cwd:0x40 swd:0 twd:0 fop:0 mxcsr:0x1fa0 mxcsr_mask:0xffff
+(00.352884)      1: x86: magic1:0x46505853 extended_size:900 xstate_bv:0x17 xstate_size:896
+(00.352886)      1: x86: xstate_bv: 0x17
+(00.352887)      1: x86: -----------------------
+(00.352890)      1: Thread    3 stack  0x36880 rt_sigframe  0x3e880
+(00.352892)      1: x86: xsave runtime structure
+(00.352894)      1: x86: -----------------------
+(00.352895)      1: x86: cwd:0x40 swd:0 twd:0 fop:0 mxcsr:0x1fa0 mxcsr_mask:0xffff
+(00.352897)      1: x86: magic1:0x46505853 extended_size:900 xstate_bv:0x17 xstate_size:896
+(00.352899)      1: x86: xstate_bv: 0x17
+(00.352900)      1: x86: -----------------------
+(00.352903)      1: Thread    4 stack  0x40080 rt_sigframe  0x48080
+(00.352922)      1: Going to chroot into /proc/self/fd/8
+(00.352927)      1: Restoring umask to 22
+(00.352967)      1: task_args: 0x4a000
+task_args->pid: 1
+task_args->nr_threads: 5
+task_args->clone_restore_fn: 0x11260
+task_args->thread_args: 0x4a540
+(00.352972) pie: 1: Switched to the restorer 1
+(00.353069) pie: 1: Mapping native vDSO at 0x4f000
+(00.353076) pie: 1: 	mmap(0x400000 -> 0x48a000, 0x7 0x12 3)
+(00.353083) pie: 1: 	mmap(0x48a000 -> 0x547000, 0x3 0x12 3)
+(00.353087) pie: 1: 	mmap(0x547000 -> 0x55b000, 0x3 0x12 3)
+(00.353090) pie: 1: 	mmap(0x55b000 -> 0x579000, 0x3 0x32 -1)
+(00.353093) pie: 1: 	mmap(0xc000000000 -> 0xc004000000, 0x3 0x32 -1)
+(00.353097) pie: 1: 	mmap(0x7f9633e5b000 -> 0x7f963610c000, 0x3 0x32 -1)
+(00.353100) pie: 1: 	mmap(0x7ffc26189000 -> 0x7ffc261aa000, 0x3 0x132 -1)
+(00.353107) pie: 1: 	mmap(0x7ffc261bb000 -> 0x7ffc261be000, 0x3 0x32 -1)
+(00.353110) pie: 1: 	mmap(0x7ffc261be000 -> 0x7ffc261c0000, 0x7 0x32 -1)
+(00.353113) pie: 1: Preadv 0x400000:4096... (57 iovs)
+(00.359132) pie: 1: `- returned 552960
+(00.359144) pie: 1:    `- skip pagemap
+(00.359146) pie: 1:    `- skip pagemap
+(00.359148) pie: 1:    `- skip pagemap
+(00.359150) pie: 1:    `- skip pagemap
+(00.359152) pie: 1:    `- skip pagemap
+(00.359154) pie: 1:    `- skip pagemap
+(00.359155) pie: 1:    `- skip pagemap
+(00.359157) pie: 1:    `- skip pagemap
+(00.359159) pie: 1:    `- skip pagemap
+(00.359161) pie: 1:    `- skip pagemap
+(00.359163) pie: 1:    `- skip pagemap
+(00.359165) pie: 1:    `- skip pagemap
+(00.359167) pie: 1:    `- skip pagemap
+(00.359169) pie: 1:    `- skip pagemap
+(00.359171) pie: 1:    `- skip pagemap
+(00.359173) pie: 1:    `- skip pagemap
+(00.359175) pie: 1:    `- skip pagemap
+(00.359177) pie: 1:    `- skip pagemap
+(00.359179) pie: 1:    `- skip pagemap
+(00.359180) pie: 1:    `- skip pagemap
+(00.359182) pie: 1:    `- skip pagemap
+(00.359184) pie: 1:    `- skip pagemap
+(00.359186) pie: 1:    `- skip pagemap
+(00.359188) pie: 1:    `- skip pagemap
+(00.359190) pie: 1:    `- skip pagemap
+(00.359192) pie: 1:    `- skip pagemap
+(00.359194) pie: 1:    `- skip pagemap
+(00.359196) pie: 1:    `- skip pagemap
+(00.359198) pie: 1:    `- skip pagemap
+(00.359200) pie: 1:    `- skip pagemap
+(00.359202) pie: 1:    `- skip pagemap
+(00.359203) pie: 1:    `- skip pagemap
+(00.359205) pie: 1:    `- skip pagemap
+(00.359207) pie: 1:    `- skip pagemap
+(00.359209) pie: 1:    `- skip pagemap
+(00.359211) pie: 1:    `- skip pagemap
+(00.359213) pie: 1:    `- skip pagemap
+(00.359215) pie: 1:    `- skip pagemap
+(00.359217) pie: 1:    `- skip pagemap
+(00.359219) pie: 1:    `- skip pagemap
+(00.359221) pie: 1:    `- skip pagemap
+(00.359223) pie: 1:    `- skip pagemap
+(00.359224) pie: 1:    `- skip pagemap
+(00.359226) pie: 1:    `- skip pagemap
+(00.359228) pie: 1:    `- skip pagemap
+(00.359230) pie: 1:    `- skip pagemap
+(00.359232) pie: 1:    `- skip pagemap
+(00.359234) pie: 1:    `- skip pagemap
+(00.359236) pie: 1:    `- skip pagemap
+(00.359238) pie: 1:    `- skip pagemap
+(00.359240) pie: 1:    `- skip pagemap
+(00.359242) pie: 1:    `- skip pagemap
+(00.359244) pie: 1:    `- skip pagemap
+(00.359245) pie: 1:    `- skip pagemap
+(00.359247) pie: 1:    `- skip pagemap
+(00.359249) pie: 1:    `- skip pagemap
+(00.359251) pie: 1:    `- skip pagemap
+(00.359256) pie: 1: vdso: Parsing at 0x7ffc261be000 0x7ffc261c0000
+(00.359259) pie: 1: vdso: PT_LOAD p_vaddr: 0x0
+(00.359261) pie: 1: vdso: DT_HASH: 0x120
+(00.359263) pie: 1: vdso: DT_STRTAB: 0x298
+(00.359265) pie: 1: vdso: DT_SYMTAB: 0x1a8
+(00.359267) pie: 1: vdso: DT_STRSZ: 0x5e
+(00.359269) pie: 1: vdso: DT_SYMENT: 0x18
+(00.359271) pie: 1: vdso: nbucket 0x3 nchain 0xa bucket 0x7ffc261be128 chain 0x7ffc261be134
+(00.359274) pie: 1: vdso: image [vdso] 0x7ffc261be000-0x7ffc261c0000 [vvar] 0x7ffc261bb000-0x7ffc261be000
+(00.359277) pie: 1: vdso: Runtime vdso/vvar matches dumpee, remap inplace
+(00.359288) pie: 1: vdso: Remap rt-vdso 0x52000 -> 0x7ffc261be000
+(00.359296) pie: 1: vdso: Remap rt-vvar 0x4f000 -> 0x7ffc261bb000
+(00.359316) pie: 1: Restoring scheduler params 0.0.0
+(00.359452) pie: 1: 1: Restored
+(00.359472) pie: 10: Restoring scheduler params 0.0.0
+(00.359478) pie: 10: 10: Restored
+(00.359487) pie: 9: Restoring scheduler params 0.0.0
+(00.359491) pie: 9: 9: Restored
+(00.359500) pie: 8: Restoring scheduler params 0.0.0
+(00.359504) pie: 8: 8: Restored
+(00.359512) pie: 7: Restoring scheduler params 0.0.0
+(00.359517) pie: 7: 7: Restored
+(00.359561) Running post-restore scripts
+(00.359566) 	RPC
+(00.361446) mnt: Switching to new ns to clean ghosts
+(00.362046) Unlock network
+(00.362054) Running network-unlock scripts
+(00.362056) 	RPC
+iptables-restore: invalid option -- 'w'
+ip6tables-restore: invalid option -- 'w'
+(00.377484) pie: 10: seccomp: mode 0 on tid 10
+(00.381800) pie: 9: seccomp: mode 0 on tid 9
+(00.381832) pie: 9: restoring lsm profile changeprofile docker-default
+(00.381871) pie: 8: seccomp: mode 0 on tid 8
+(00.381900) pie: 8: restoring lsm profile changeprofile docker-default
+(00.381918) pie: 7: seccomp: mode 0 on tid 7
+(00.381939) pie: 7: restoring lsm profile changeprofile docker-default
+(00.381955) pie: 1: seccomp: mode 0 on tid 1
+(00.381976) pie: 1: restoring lsm profile changeprofile docker-default
+(00.382008) pie: 10: restoring lsm profile changeprofile docker-default
+(00.382053) Force no-breakpoints restore
+(00.382070) Force no-breakpoints restore
+(00.382079) Force no-breakpoints restore
+(00.382087) Force no-breakpoints restore
+(00.382095) Force no-breakpoints restore
+(00.382098) Restore finished successfully. Resuming tasks.
+(00.382102) 16032 was trapped
+(00.382106) 16032 (native) is going to execute the syscall 202, required is 15
+(00.382110) 16031 was trapped
+(00.382113) 16031 (native) is going to execute the syscall 202, required is 15
+(00.382116) 16030 was trapped
+(00.382119) 16030 (native) is going to execute the syscall 202, required is 15
+(00.382122) 15990 was trapped
+(00.382125) 15990 (native) is going to execute the syscall 202, required is 15
+(00.382136) 16033 was trapped
+(00.382139) 16033 (native) is going to execute the syscall 202, required is 15
+(00.382142) 16032 was trapped
+(00.382145) 16032 (native) is going to execute the syscall 202, required is 15
+(00.382148) 16031 was trapped
+(00.382150) 16031 (native) is going to execute the syscall 202, required is 15
+(00.382153) 16030 was trapped
+(00.382156) 16030 (native) is going to execute the syscall 202, required is 15
+(00.382159) 15990 was trapped
+(00.382162) 15990 (native) is going to execute the syscall 202, required is 15
+(00.382173) 16033 was trapped
+(00.382176) 16033 (native) is going to execute the syscall 202, required is 15
+(00.382179) 16032 was trapped
+(00.382182) 16032 (native) is going to execute the syscall 202, required is 15
+(00.382185) 16031 was trapped
+(00.382187) 16031 (native) is going to execute the syscall 202, required is 15
+(00.382190) 16030 was trapped
+(00.382193) 16030 (native) is going to execute the syscall 202, required is 15
+(00.382196) 15990 was trapped
+(00.382199) 15990 (native) is going to execute the syscall 202, required is 15
+(00.382210) 16033 was trapped
+(00.382213) 16033 (native) is going to execute the syscall 202, required is 15
+(00.382216) 16032 was trapped
+(00.382218) 16032 (native) is going to execute the syscall 202, required is 15
+(00.382221) 16031 was trapped
+(00.382224) 16031 (native) is going to execute the syscall 202, required is 15
+(00.382227) 16030 was trapped
+(00.382230) 16030 (native) is going to execute the syscall 202, required is 15
+(00.382233) 15990 was trapped
+(00.382235) 15990 (native) is going to execute the syscall 202, required is 15
+(00.382247) 16033 was trapped
+(00.382250) 16033 (native) is going to execute the syscall 202, required is 15
+(00.382253) 16032 was trapped
+(00.382255) 16032 (native) is going to execute the syscall 15, required is 15
+(00.382264) 16032 was stopped
+(00.382266) 16033 was trapped
+(00.382269) 16033 (native) is going to execute the syscall 15, required is 15
+(00.382275) 16033 was stopped
+(00.382278) 16031 was trapped
+(00.382280) 16031 (native) is going to execute the syscall 15, required is 15
+(00.382287) 16031 was stopped
+(00.382289) 16030 was trapped
+(00.382292) 16030 (native) is going to execute the syscall 15, required is 15
+(00.382298) 16030 was stopped
+(00.382300) 15990 was trapped
+(00.382303) 15990 (native) is going to execute the syscall 3, required is 15
+(00.382313) 15990 was trapped
+(00.382316) 15990 (native) is going to execute the syscall 3, required is 15
+(00.382322) 15990 was trapped
+(00.382325) 15990 (native) is going to execute the syscall 3, required is 15
+(00.382331) 15990 was trapped
+(00.382333) 15990 (native) is going to execute the syscall 3, required is 15
+(00.382339) 15990 was trapped
+(00.382342) 15990 (native) is going to execute the syscall 11, required is 15
+(00.382359) 15990 was trapped
+(00.382362) 15990 (native) is going to execute the syscall 11, required is 15
+(00.382369) 15990 was trapped
+(00.382372) 15990 (native) is going to execute the syscall 15, required is 15
+(00.382383) 15990 was stopped
+(00.382395) 15990 was trapped
+(00.382398) 15990 (native) is going to execute the syscall 11, required is 11
+(00.382446) 15990 was stopped
+(00.382456) Running pre-resume scripts
+(00.382458) 	RPC
+(00.397575) Writing stats
+(00.397624) Running post-resume scripts
+(00.397626) 	RPC
